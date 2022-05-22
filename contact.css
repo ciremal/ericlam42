@@ -1,0 +1,82 @@
+.contact-container {
+    margin-top: 100px;
+    padding-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 100px;
+}
+
+.contact-title {
+    margin-top: 20px;
+    font-size: 25px;
+    color: white;
+    margin-bottom: 30px;
+}
+
+#switch:checked~.outer .contact-title {
+    color: black;
+}
+
+.contact-buttons {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 20px;
+}
+
+.logo-button {
+    position: relative;
+    border-radius: 50%;
+    border: none;
+    height: 50px;
+    width: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: opacity 0.15s;
+}
+
+.logo-button:hover {
+    opacity: 0.8;
+}
+
+.logo-button .social-logo{
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    -webkit-mask-position: center;
+    mask-position: center;
+    height: 40px;
+    width: 40px;
+    background-color: white;
+}
+
+#switch:checked~.outer .contact-container .social-logo {
+    background-color: black;
+}
+
+.logo-button .tooltip {
+    position: absolute;
+    background-color: rgb(150, 150, 150);
+    color: white;
+    bottom: -30px;
+    padding: 3px 5px 3px 5px;
+    border-radius: 3px;
+    opacity: 0;
+    transition: 0.25s;
+    pointer-events: none;
+    white-space: nowrap;
+    font-size: 12px;
+}
+
+.logo-button:hover .tooltip {
+    opacity: 1;
+}
+
+.copyright {
+    color: white;
+    margin-top: 200px;
+}
+
+#switch:checked~.outer .contact-container .copyright {
+    color: black;
+}

@@ -1,0 +1,108 @@
+.header {
+    font-size: 18px;
+    background-color: rgb(31, 31, 31);
+
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    height: 80px;
+
+    color: white;
+    display: flex;
+    justify-content: space-between;
+}
+
+.left-section {
+    display: flex;
+    align-items: center;
+    padding-left: 30px;
+}
+
+.home-label,
+.about-label,
+.work-label,
+.projects-label,
+.contact-label {
+    margin-right: 30px;
+}
+
+.jump-to-home,
+.jump-to-about,
+.jump-to-work,
+.jump-to-projects,
+.jump-to-contact {
+    text-decoration: none;
+    color: rgb(194, 194, 194);
+}
+
+.right-section {
+    position: relative;
+    padding-right: 40px;
+    display: flex;
+    align-items: center;
+}
+
+.right-section .toggle {
+    width: 60px;
+    height: 30px;
+    background-color: white;
+    top: 30px;
+    right: 20px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    margin-right: 5px;
+}
+
+.header .logo-button .tooltip {
+    display: none;
+}
+
+#switch:checked~.outer .header {
+    background-color: white;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+}
+
+#switch:checked~.outer .header .toggle {
+    background-color: black;
+    transition: all 0.3s ease;
+}
+
+#switch:checked~.outer .header .social-logo {
+    background-color: black;
+}
+
+#switch:checked~.outer .header .left-section .jump-to-home {
+    color: black;
+}
+
+#switch:checked~.outer .header .left-section .jump-to-about {
+    color: black;
+}
+
+#switch:checked~.outer .header .left-section .jump-to-work {
+    color: black;
+}
+
+#switch:checked~.outer .header .left-section .jump-to-projects {
+    color: black;
+}
+
+#switch:checked~.outer .header .left-section .jump-to-contact {
+    color: black;
+}
+
+.toggle .circle {
+    height: 25px;
+    width: 25px;
+    background: linear-gradient(40deg, #421886, #961b67 70%);
+    border-radius: 50%;
+    margin-left: 4px;
+    transition: all 0.3s ease;
+}
+
+#switch:checked~.outer .header .circle {
+    margin-left: 30px;
+    background: linear-gradient(40deg, #d53369, #cbad6d 70%);
+}
