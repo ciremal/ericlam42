@@ -5,7 +5,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-image: url(home-section/home-background.PNG);
+    background-image: url(home-section/home-background.png);
 }
 
 #switch:checked~.outer .home-container{
