@@ -21,6 +21,12 @@
     column-gap: 30px;
 }
 
+@media (max-width: 1200px){
+    .projects-grid{
+        grid-template-columns: 1fr;
+    }
+}
+
 .cybershowdown,
 .iHaveLived {
     display: flex;

@@ -1,11 +1,12 @@
 .home-container {
     padding-top: 150px;
-    padding-bottom: 250px;
+    padding-bottom: 300px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     background-image: url(home-section/home-background.png);
+    background-repeat: none;
 }
 
 #switch:checked~.outer .home-container{
