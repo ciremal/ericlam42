@@ -20,8 +20,9 @@
 }
 
 .tech-and-hobbies {
-    display: flex;
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 60px;
 }
 
 .tech-skills,
@@ -49,14 +50,6 @@
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
 }
 
-.tech-skills {
-    margin-right: 30px;
-}
-
-.hobbies {
-    margin-left: 30px;
-}
-
 .tech-and-hobbies .title {
     font-size: 25px;
     font-weight: bold;
@@ -70,4 +63,21 @@
 
 #switch:checked~.outer .tech-and-hobbies .sub-title {
     color: rgb(0, 158, 0);
+}
+
+@media (max-width: 1200px){
+    .about-me-paragraph{
+        width: 400px;
+    }
+
+    .tech-and-hobbies {
+        grid-template-columns: 1fr;
+        row-gap: 40px;
+    }
+
+    .tech-skills,
+    .hobbies{
+        width: 400px;
+    }
+
 }

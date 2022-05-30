@@ -14,12 +14,6 @@
     margin-top: 30px;
 }
 
-@media (max-width: 1200px){
-    .work-grid{
-        grid-template-columns: 1fr;
-    }
-}
-
 .job-display{
     display: flex;
     flex-direction: column;
@@ -82,4 +76,22 @@
 
 #switch:checked~.outer .resume-container a {
     color: black;
+}
+
+@media (max-width: 1200px){
+    .work-grid{
+        grid-template-columns: 1fr;
+    }
+
+    .job-display{
+        width: 450px;
+    }
+
+    .job-banner{
+        width: 450px;
+    }
+
+    .resume-container{
+        width: 400px;
+    }
 }
