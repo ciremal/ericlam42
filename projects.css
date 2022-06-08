@@ -22,12 +22,14 @@
 }
 
 .cybershowdown,
-.iHaveLived {
+.iHaveLived,
+.YouTubeVideoDownloader {
     display: flex;
     flex-direction: column;
     width: 550px;
     background-color: rgb(44, 44, 44);
     border-radius: 20px;
+    margin-bottom: 20px;
 }
 
 #switch:checked~.outer .cybershowdown {
@@ -40,8 +42,14 @@
     background-color: white;
 }
 
+#switch:checked~.outer .YouTubeVideoDownloader {
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    background-color: white;
+}
+
 .cybershowdown-banner,
-.iHaveLived-banner {
+.iHaveLived-banner,
+.YouTubeVideoDownloader-banner {
     width: 550px;
     height: 275px;
     object-fit: cover;
@@ -49,7 +57,8 @@
 }
 
 .cybershowdown-description,
-.iHaveLived-description {
+.iHaveLived-description,
+.YouTubeVideoDownloader-description {
     color: white;
     padding: 0px 20px 20px 20px;
 }
@@ -62,8 +71,13 @@
     color: black;
 }
 
+#switch:checked~.outer .YouTubeVideoDownloader-description {
+    color: black;
+}
+
 .cybershowdown-description .programming-lang,
-.iHaveLived-description .programming-lang {
+.iHaveLived-description .programming-lang,
+.YouTubeVideoDownloader .programming-lang {
     background-color: rgb(18, 196, 196);
     color: black;
     display: inline-block;
@@ -114,13 +128,15 @@
     }
 
     .cybershowdown,
-    .iHaveLived {
+    .iHaveLived,
+    .YouTubeVideoDownloader {
         width: 450px;
         margin-bottom: 30px;
     }
 
     .cybershowdown-banner,
-    .iHaveLived-banner {
+    .iHaveLived-banner,
+    .YouTubeVideoDownloader {
         width: 450px;
         object-fit: contain;
 
